@@ -16,7 +16,7 @@ var registerActions = {
             .click({selector:'@medioItemList', index:medio})
             .click('@acceptCheck')
             .click('@registerButton')
-            .pause(20000)
+            //.pause(20000)
     }
 }
 
