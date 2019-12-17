@@ -1,7 +1,7 @@
 module.exports = {
     '@tags': ['culqi'],
 
-    'Registro con éxito HappyPath Redes': (browser) => {
+    'Registro con éxito HappyPath': (browser) => {
         let register = browser.page.register()
 
         register
