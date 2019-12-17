@@ -47,7 +47,7 @@ module.exports = {
         headless: {
             launch_url: testUrl,
             globals: {
-                waitForConditionTimeout: defaultTimeout // As vezes a conexão com a internet/rede fica lenta
+                waitForConditionTimeout: defaultTimeout // when the networks connection is slow
             },
             webdriver: {
                 server_path: chromedriver.path,
