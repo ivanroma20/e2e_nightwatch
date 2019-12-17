@@ -4,7 +4,7 @@
   "description": "automated testing project with nightwatch",
   "main": "index.js",
   "scripts": {
-    "test:ci": "./node_modules/.bin/nightwatch --tag culqi",
+    "test:ci": "./node_modules/.bin/nightwatch --env=headless",
     "test:ciculqi": "./node_modules/.bin/nightwatch --tag culqi --env=headless"
   },
   "keywords": [

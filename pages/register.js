@@ -3,7 +3,7 @@ var registerActions = {
     with: function (name, email, pass, medio) {
         return this
             .navigate()
-            .waitForElementVisible('@form', 20000)
+            .waitForElementVisible('@form', 10000)
             .click('@quienSelect')
             .waitForElementVisible('@comercioItem', 10000)
             .click('@comercioItem')
