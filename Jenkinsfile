@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image "qaninja/node-wd"
-            //args "--network=skynet"
+            args "--network=skynet"
         }
     }
     stages {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Tests') {
             steps {
-                sh "npm run test:ci-culqi"
+                sh "npm run test:ciculqi"
             }
             post {
                 always {

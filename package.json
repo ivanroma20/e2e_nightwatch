@@ -12,7 +12,7 @@
     "test:notag": "./node_modules/.bin/nightwatch --skiptags smoke,404",
     "test": "./node_modules/.bin/nightwatch",
     "test:ci": "./node_modules/.bin/nightwatch --env=headless",
-    "test:ci-culqi": "./node_modules/.bin/nightwatch --tag culqi --env=headless"
+    "test:ciculqi": "./node_modules/.bin/nightwatch --tag culqi --env=headless"
   },
   "keywords": [
     "nodejs",

@@ -78,7 +78,7 @@ module.exports = {
         },
 
         stage : {
-            launch_url: "http://culqi3-qa-onboarding.s3-website-us-east-1.amazonaws.com/"
+            launch_url: "http://zombie-web:5000"
         }
     }
 }
