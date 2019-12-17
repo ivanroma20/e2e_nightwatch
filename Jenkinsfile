@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image "qaninja/node-wd"
+            args "--network=127.0.0.1"
+        }
+    }
     stages {
         stage('Build') {
             steps {
