@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image "qaninja/node-wd"
-            args "--network=skynet"
-        }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
