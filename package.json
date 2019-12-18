@@ -6,7 +6,7 @@
   "scripts": {
     "test:ci": "./node_modules/.bin/nightwatch --env=headless",
     "test:ciculqi": "./node_modules/.bin/nightwatch --tag culqi --env=headless",
-    "test:cigoogle": "./node_modules/.bin/nightwatch --tag google"
+    "test:cigoogle": "./node_modules/.bin/nightwatch --tag google --env=headless"
   },
   "keywords": [
     "nodejs",
