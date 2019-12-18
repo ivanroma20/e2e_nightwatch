@@ -55,6 +55,7 @@ module.exports = {
             },
             desiredCapabilities: {
                 browserName: "chrome",
+                acceptSslCerts : true,
                 chromeOptions: {
                     w3c: false,
                     args: ['--headless', '--no-sandbox', '--disabled-dev-shm-usage']
