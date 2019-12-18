@@ -5,7 +5,7 @@ const chromedriver = require('chromedriver');
 require('geckodriver');
 
 const testUrl = 'http://culqi3-qa-onboarding.s3-website-us-east-1.amazonaws.com/user/register'
-const defaultTimeout = 30000
+const defaultTimeout = 50000
 
 module.exports = {
     src_folders: ['tests'],

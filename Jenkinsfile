@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Tests') {
             steps {
-                sh "npm run test:cigoogle"
+                sh "npm run test:ciculqi"
             }
             post {
                 always {
