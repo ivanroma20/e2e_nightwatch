@@ -21,7 +21,7 @@ var registerActions = {
 }
 
 module.exports = {
-    url: '/user/register',
+    url: 'http://culqi3-qa-onboarding.s3-website-us-east-1.amazonaws.com/user/register',
     commands: [registerActions],
     elements: {
         form: '.clq-register',

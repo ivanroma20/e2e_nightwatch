@@ -4,8 +4,8 @@ require('babel-core/register')
 const chromedriver = require('chromedriver');
 require('geckodriver');
 
-const testUrl = 'http://culqi3-qa-onboarding.s3-website-us-east-1.amazonaws.com'
-const defaultTimeout = 15000
+const testUrl = 'http://culqi3-qa-onboarding.s3-website-us-east-1.amazonaws.com/user/register'
+const defaultTimeout = 30000
 
 module.exports = {
     src_folders: ['tests'],
