@@ -1,0 +1,33 @@
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  image: node:10
+  script:
+    - npm install
+  only:
+    - develop
+    - /^release-[0-9]+\.[0-9]+\.[0-9]+$/
+    - master
+    - merge_requests
+  artifacts:
+    paths:
+      - ./
+
+test:
+  stage: test
+  image: qaninja/node-wd
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - npm run test:ciculqi
+  only:
+    - develop
+    - /^release-[0-9]+\.[0-9]+\.[0-9]+$/
+    - master
+    - merge_requests
+  artifacts:
+    paths:
+      - tests_output

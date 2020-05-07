@@ -4,8 +4,10 @@ require('babel-core/register')
 const chromedriver = require('chromedriver');
 require('geckodriver');
 
-const testUrl = 'http://culqi3-qa-onboarding.s3-website-us-east-1.amazonaws.com/user/register'
-const defaultTimeout = 50000
+const testUrl = 'https://afiliate-qa.culqi.xyz'
+//const testUrl = 'http://localhost:8888/'
+
+const defaultTimeout = 15000
 
 module.exports = {
     src_folders: ['tests'],
@@ -16,18 +18,6 @@ module.exports = {
     webdriver: {
         start_process: true,
     },
-
-    // test_workers: {
-    //   enabled: true,
-    //   workers: 2
-    // },
-
-    // screenshots : {
-    //     enabled: true,
-    //     on_failure: true,
-    //     on_error: true,
-    //     path: 'tests_output/'
-    // },
 
     test_settings: {
         default: {
@@ -55,8 +45,6 @@ module.exports = {
             },
             desiredCapabilities: {
                 browserName: "chrome",
-                acceptInsecureCerts: true,
-                //acceptSslCerts : true,
                 chromeOptions: {
                     w3c: false,
                     args: ['--headless', '--no-sandbox', '--disabled-dev-shm-usage']
@@ -81,6 +69,10 @@ module.exports = {
 
         stage : {
             launch_url: "http://culqi3-qa-onboarding.s3-website-us-east-1.amazonaws.com"
+        } ,
+
+        stageadmin : {
+            launch_url: "http://culqi3-development-admin.s3-website-us-west-2.amazonaws.com"
         }
     }
 }

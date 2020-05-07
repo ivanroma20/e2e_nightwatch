@@ -6,7 +6,8 @@
   "scripts": {
     "test:ci": "./node_modules/.bin/nightwatch --env=headless",
     "test:ciculqi": "./node_modules/.bin/nightwatch --tag culqi --env=headless",
-    "test:cigoogle": "./node_modules/.bin/nightwatch --tag google --env=headless"
+    "test:cidemo": "./node_modules/.bin/nightwatch --tag demo --env=headless",
+    "test:admin": "./node_modules/.bin/nightwatch --tag admin --env=stageadmin"
   },
   "keywords": [
     "nodejs",
@@ -21,7 +22,7 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-add-module-exports": "^1.0.2",
     "babel-preset-es2015": "^6.24.1",
-    "chromedriver": "^78.0.1",
+    "chromedriver": "^80.0.0",
     "faker": "^4.1.0",
     "geckodriver": "^1.19.1",
     "nightwatch": "^1.2.4",
